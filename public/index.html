@@ -1,64 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-	<meta content="" name="description">
-	<meta content="" name="author">
-	<title>KentFlix</title><!-- Bootstrap core CSS-->
-	<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- Custom fonts for this template-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<link href="/css/custom.css" rel="stylesheet">
-    <link href="/css/new.css" rel="stylesheet">
-  
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.5.3/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.5.3/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.5.3/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.5.3/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.5.3/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-</head>
-<body class="fixed-nav sticky-footer bg-dark" id="page-top">
-	<div class="topbar"></div>
-	<div class="content-wrapper">
-		<div class="container" style="margin-bottom: 75px;">
-			<!-- Breadcrumbs-->
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item active">Home</li>
-			</ol>
-			<div class="row">
-				<div class="col-md-6 col-lg-7">
-                    <div class="panel">
-                        <img class="img-top" src="http://www.airliners-interactive.com/wp-content/uploads/2016/05/LetsGetStarted.png" alt="Card image cap">
-                        <p class="h4">KentFlix is now in development</p>
-                        <p class="lead">Making a elegent way of watching Kent lectures. The server is being built, the clients are in progess and soon we will be public.</p>
-                        <a href="https://github.com/KentCompSoc" class="btn btn-secondary btn-lg btn-block">Check it out</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5">
-                    <div class="panel">
-                        <p class="h4">Client</p>
-                        <p class="lead">Get hands on with KentFlix by having it in your pocket.</p>
-                        <a href="https://github.com/KentCompSoc/KentFlixClient" class="btn btn-secondary btn-lg btn-block">View</a>
-                    </div>
-                    <div class="panel">
-                        <p class="h4">Server</p>
-                        <p class="lead">The brains of the system, geting lectures, processing and serving all in one simple solution.</p>
-                        <a href="https://github.com/KentCompSoc/KentFlixServer" class="btn btn-secondary btn-lg btn-block">View</a>
-                    </div>
-                </div>
-			</div>
-		</div>
-		<div class="footer"></div>
-      
-		<script src="/vendor/jquery/jquery.min.js"></script> 
-		<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
-        <script src="/js/main.js"></script>
-	</div>
-</body>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/landing.css">
+  </head>
+  <body>
+    <landing-page>
+      <div class="video-background">
+        <div class="video-foreground">
+          <iframe src="https://www.youtube.com/embed/?listType=playlist&list=PLKUkDvhrDw0MkZ0l5lIp6QVyKQAPHm75v&vq=hd1080&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <cover></cover>
+      <a href="/" class="logo">KentFlix</a>
+      <main-container>
+        <window>
+          <title>KentFlix</title>
+          <description>An elegant way to watch lecture recordings, at Kent by Kent Computing Society</description>
+          <a class="main-btn" href="https://app.kentflix.com">Start Using Now</a>
+        </window>
+      </main-container>
+      <btn-container>
+        <a class="btn" href="/dashboard/">Developers</a>
+        <a class="btn" href="/legal/">Legal</a>
+      </btn-container>
+    </landing-page>
+  </body>
 </html>

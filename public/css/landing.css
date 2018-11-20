@@ -1,0 +1,166 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+landing-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1C1C1E;
+}
+
+landing-page video {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  object-fit:cover;
+}
+
+landing-page cover {
+  background: rgba(0,0,0,0.75);
+  background-size: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit:cover;
+}
+
+landing-page btn-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+landing-page btn-container .btn {
+  position: relative;
+  /*background-color: red;*/
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 2.5px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+landing-page main-container window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+landing-page main-container window title {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 50px;
+  padding: 10px 25px;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+}
+
+landing-page main-container window description {
+  display: block;
+  position: relative;
+  font-size: 25px;
+  padding: 0px 25px 35px;
+  text-align: center;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+}
+
+landing-page .main-btn {  
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 15px 25px;
+  transition: background .3s linear;
+  font-family: 'PT Sans', sans-serif;
+  border-radius: 2px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 2.5px;
+}
+
+landing-page .main-btn:hover {  
+  background-color: rgba(255,255,255,0.1);
+}
+
+
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 0;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+.logo {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  width: 150px;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 10px;
+  font-family: 'PT Sans', sans-serif;
+  z-index: 20;
+}
